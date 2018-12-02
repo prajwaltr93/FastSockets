@@ -10,6 +10,6 @@ host = input('enter host ip:')
 #using Created object as Client
 obj.Client(host,9999)
 #to Demonstrate Recieving Data from Server
-print(obj.Recv(1024))
+print(obj.Recv(1024).decode())
 #closing client socket after use
 obj.close()
