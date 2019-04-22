@@ -28,6 +28,6 @@ class Create():
     def Send(self,data):
         self.conn.send(data)
     def Recv(self,size):
-        return self.s.recv(size)
+        return self.conn.recv(size)
     def Close(self):
         self.s.close()
